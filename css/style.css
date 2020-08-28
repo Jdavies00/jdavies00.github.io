@@ -1,0 +1,33 @@
+body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 2em;
+    padding-top: 56px;
+  }
+  
+  h1 {
+    font-style: italic;
+    color: #373fff;
+  }
+  
+  a.carousel-control-prev:hover,
+  a.carousel-control-next:hover{
+    background-color: #7189bf66;
+  }
+  
+  .carousel-indicators li {
+    background-color: #7189bf;
+  }
+  
+  
+  
+  /* Change these colors */
+  .brand-main {
+    background-color: #727ced; /* <strike>Main Background Color </strike>*/
+  }
+  
+  .brand {
+    background-color: #fabd43; /* Header and Footer bar Color */
+  }
+  
+  
+  
