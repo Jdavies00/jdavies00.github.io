@@ -18,7 +18,12 @@ body {
     background-color: #7189bf;
   }
   
-  
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
   
   /* Change these colors */
   .brand-main {
