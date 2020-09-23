@@ -1,6 +1,6 @@
 # Awesome Inc Vanilla HTML, CSS & JavaScript Repo
 
-Use this repo as a starter template for a vanilla HTML, CSS, & JS project
+https://jdavies00.github.io/
 
 Add your pseudocode to the [pseudocode.md file](https://github.com/bootcamp-students/basic-repo/blob/master/pseudocode.md)
 
