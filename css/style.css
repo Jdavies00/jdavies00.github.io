@@ -1,38 +1,29 @@
-body {
+ /* body {
     font-family: helvetica, arial, sans-serif;
     margin: 2em;
     padding-top: 56px;
+  } 
+    */
+  html{
+    height:100%;
+
   }
-  
   h1 {
     font-style: italic;
-    color: #373fff;
-  }
+  } 
   
-  a.carousel-control-prev:hover,
-  a.carousel-control-next:hover{
-    background-color: #7189bf66;
-  }
-  
-  .carousel-indicators li {
-    background-color: #7189bf;
-  }
-  
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-  
+  .navbar {
+    min-height: 5px;
+}
+body{
+  min-height: 100% ;
+  min-width: 100% ;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-image: linear-gradient( #0099ff 0%, #ccffff 100%)
+}
   /* Change these colors */
-  .brand-main {
-    background-color: #727ced; /* <strike>Main Background Color </strike>*/
-  }
-  
-  .brand {
-    background-color: #fabd43; /* Header and Footer bar Color */
-  }
-  
-  
+  /* .brand-main {
+    background-color: #17a2b8 }
+    /* <strike>Main Background Color </strike>*/
   

@@ -1,14 +1,23 @@
-# Type your pseudocode here
-creat repo on git
-name repo jdavies00.github.io
-clone repo into vs 
-create file structure for blog
-appy css and standard  html
-create dev branch
-import blog from class
 
-test changes in vs local
-save
-puch to giit
+
+cut copy nav bar formm the political add
+
+clean upo the colors 
+        #EEF0F2
+concider some thumb nails for the projeccts page
+
+]impor tthe theme 
+
 
 [Markdown Cheat Sheet](https://github.com/bootcamp-students/Resources/wiki/markdown-cheat-sheet)
+
+
+ieadllly I think I caould put all pages of my blog together in one page
+        not sure if thats a good idea or not
+HTML
+under jubo tron have a carosule for quotes
+background graiant
+nav bar(again)
+link in other projects
+        in punch out pages
+
