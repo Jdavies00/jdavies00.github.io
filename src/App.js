@@ -1,27 +1,58 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Navbar, Button, Jumbotron, Container } from 'reactstrap';
+import { AppProvider } from './Untilities/AppContext';
 import './App.css';
-import Header from './components/Header'
+import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom"
+import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
-class App extends Component  {
-  constructor() {
-    super();
-      this.pages = ['Home', 'About Me','blog','images','Links'];
-    
-  }
-  render() {
-    return (
-      <div className="App container">
-      <Header 
-      pages= {this.pages}
-
-      />
-      
+import Blog from "./components/Blog"
+import AboutMe from "./components/AboutMe"
+import HomePage from "./components/Home"
 
 
+function App() {
+  const [dropdownOpen, setOpen] = useState(false);
+  const toggle = () => setOpen(!dropdownOpen);
 
-      </div>
-    );
-  }
+  return (
+    <>
+      <Router>
+        <AppProvider>
+          <Navbar className="sticky-top" style={{ backgroundColor: 'grey' }} >
+            <Container>
+              <NavLink style={{ color: 'black' }} to="/"> Home </NavLink>
+              <NavLink style={{ color: 'black' }} to="/AboutMe"> About Me </NavLink>
+              <NavLink style={{ color: 'black' }} to="/Blog">  Blog </NavLink>
+
+              <ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
+                <DropdownToggle style={{ color: 'black' }} caret>
+                  Contact Me!
+      </DropdownToggle>
+                <DropdownMenu>
+                  <DropdownItem header><a href="#">Protfolio</a></DropdownItem>
+                  <DropdownItem header><a href="https://github.com/Jdavies00">Github</a></DropdownItem>
+                     <DropdownItem header><a href="https://www.linkedin.com/in/jdavies00/">Linkedin</a></DropdownItem>
+                </DropdownMenu>
+              </ButtonDropdown>
+
+            </Container>
+          </Navbar>
+          <Switch>
+            <Route exact path="/">
+              <HomePage />
+            </Route>
+            <Route path="/AboutMe">
+              <AboutMe />
+            </Route>
+            <Route path="/Blog">
+              <Blog />
+            </Route>
+          </Switch>
+        </AppProvider>
+      </Router>
+    </>
+  )
 }
 
-export default App;
+export default App
+
