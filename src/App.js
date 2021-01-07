@@ -29,9 +29,9 @@ function App() {
                   Contact Me!
       </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem header><a href="#">Protfolio</a></DropdownItem>
-                  <DropdownItem header><a href="https://github.com/Jdavies00">Github</a></DropdownItem>
-                     <DropdownItem header><a href="https://www.linkedin.com/in/jdavies00/">Linkedin</a></DropdownItem>
+                  {/* <DropdownItem header><a href="#" target= "_blank" >Protfolio</a></DropdownItem> */}
+                  <DropdownItem ><a href="https://github.com/Jdavies00" target= "_blank">Github</a></DropdownItem>
+                  <DropdownItem ><a href="https://www.linkedin.com/in/jdavies00/" target= "_blank" >Linkedin</a></DropdownItem>
                 </DropdownMenu>
               </ButtonDropdown>
 

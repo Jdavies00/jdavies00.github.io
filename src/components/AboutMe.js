@@ -1,22 +1,25 @@
-import React from 'react';
-import { Card, CardTitle, CardText, CardBody, CardSubtitle, Button, CardImg } from 'reactstrap';
+import React, { useState } from 'react';
+import { Document, Page, pdfjs } from "react-pdf";
+//  pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-const aboutMe = (props) => {
+function AboutMe() {
+  // const [numPages, setNumPages] = useState(null);
+  // const [pageNumber, setPageNumber] = useState(1);
+
+  // function onDocumentLoadSuccess({ numPages }) {
+  //   setNumPages(numPages);
+  // }
+
   return (
     <div>
-      <div>
-        <Card>
-          {/* <CardImg top width="100%" src="/assets/318x180.svg" alt="Card image cap" /> */}
-          <CardBody>
-            <CardTitle tag="h5">About Me</CardTitle>
-            <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle>
-            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-            <Button>Button</Button>
-          </CardBody>
-        </Card>
-      </div>
+      <Document
+        file="/public/Resume/JAnthonyDaves.pdf"
+        // onLoadSuccess={onDocumentLoadSuccess}
+      >
+        {/* <Page pageNumber={pageNumber} /> */}
+      </Document>
+      {/* <p>Page {pageNumber} of {numPages}</p> */}
     </div>
   );
-};
-
-export default aboutMe;
+}
+export default AboutMe;
