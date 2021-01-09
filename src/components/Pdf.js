@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
-// import { pdfjs } from 'react-pdf';
+import { Container, Row, Col } from "reactstrap"
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 function ResumePdf() {
@@ -12,15 +12,19 @@ function ResumePdf() {
   }
 
   return (
-    <div>
-      <Document
-        file="public/Resume/jDavies.pdf"
-        onLoadSuccess={onDocumentLoadSuccess}
-      >
-        <Page pageNumber={pageNumber} />
-      </Document>
-      <p>Page {pageNumber} of {numPages}</p>
-    </div>
+    <Container className = "resumeContainer">
+      
+
+        <Document 
+          file="Resume/jDavies.pdf"
+          onLoadSuccess={onDocumentLoadSuccess}
+        >
+          <Page pageNumber={pageNumber} />
+        </Document>
+        <p>Page {pageNumber} of {numPages}</p>
+
+     
+    </Container>
   );
 }
 export default ResumePdf
