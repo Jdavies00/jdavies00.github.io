@@ -3,7 +3,9 @@ import { Jumbotron, Button } from 'reactstrap';
 
 const homePage = (props) => {
   return (
+    
     <div className = "jumbotron-fluid">
+    <hr />
       <Jumbotron>
         <h1 className="display-3">Hello, world!</h1>
         <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
@@ -13,6 +15,8 @@ const homePage = (props) => {
           <Button color="primary">Learn More</Button>
         </p>
       </Jumbotron>
+      <hr />
+
     </div>
   );
 };

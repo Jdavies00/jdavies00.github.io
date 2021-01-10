@@ -12,19 +12,23 @@ function ResumePdf() {
   }
 
   return (
-    <Container className = "resumeContainer">
-      
+    <>
+      {/* <Container  > */}
+        {/* <Col> */}
+        <hr />
+          <Row className="resumeContainer">
 
-        <Document 
-          file="Resume/jDavies.pdf"
-          onLoadSuccess={onDocumentLoadSuccess}
-        >
-          <Page pageNumber={pageNumber} />
-        </Document>
-        <p>Page {pageNumber} of {numPages}</p>
-
-     
-    </Container>
+            <Document className="resume"
+              file="Resume/jDavies.pdf"
+              onLoadSuccess={onDocumentLoadSuccess}
+            >
+              <Page pageNumber={pageNumber} />
+            </Document>
+            {/* <p>Page {pageNumber} of {numPages}</p> */}
+          </Row>
+        {/* </Col> */}
+      {/* </Container> */}
+    </>
   );
 }
 export default ResumePdf

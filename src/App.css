@@ -1,11 +1,17 @@
 .jumbotron-fluid {
-  margin: 50px auto;
+  /* margin: 50px auto; */
   /* height: 100vh; */
   align-items: center;
 }
-.resumeContainer {
+.resumeContainer{
+  background-color:#E9ECEF;
+
+}
+.resume {
+  display: block;
   margin: 50px auto;
-  padding-top: 50px;
-  padding-left: 10px;
-  border-style: double;
+  padding-left: 170px;
+  /* margin-left: 500px auto; */
+  margin-right: auto;
+  width: 50%;
 }

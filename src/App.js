@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-do
 import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
 import Blog from "./components/Blog"
-import Resume from "./components/Resume"
+import Resume from "./components/Pdf"
 import HomePage from "./components/Home"
 
 
@@ -18,14 +18,14 @@ function App() {
     <>
       <Router>
         <AppProvider>
-          <Navbar className="sticky-top" style={{ backgroundColor: 'grey' }} >
+          <Navbar className="sticky-top" style={{ backgroundColor: '#E9ECEF' }} >
             <Container>
-              <NavLink style={{ color: 'black' }} to="/"> Home </NavLink>
-              <NavLink style={{ color: 'black' }} to="/Resume"> Resume </NavLink>
-              <NavLink style={{ color: 'black' }} to="/Blog">  Blog </NavLink>
+              <Button color="primary"><NavLink style={{ color: 'white' }} to="/"> Home </NavLink></Button>
+              <Button color="primary"><NavLink style={{ color: 'white' }} to="/Resume"> Resume </NavLink></Button>
+              <Button color="primary"><NavLink style={{ color: 'white' }} to="/Blog">  Blog </NavLink></Button>
 
-              <ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
-                <DropdownToggle style={{ color: 'black' }} caret>
+              <ButtonDropdown  isOpen={dropdownOpen} toggle={toggle}>
+                <DropdownToggle color="primary"  caret>
                   Contact Me!
       </DropdownToggle>
                 <DropdownMenu>
