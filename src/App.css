@@ -4,14 +4,38 @@
   align-items: center;
 }
 .resumeContainer{
-  background-color:#E9ECEF;
+  background-color:#DEE7E9;
 
 }
 .resume {
   display: block;
   margin: 50px auto;
-  padding-left: 170px;
+  padding-left: auto;
   /* margin-left: 500px auto; */
   margin-right: auto;
   width: 50%;
+}
+
+/* .cardStlye{
+  height: auto;
+  background-color: #233744;
+} */
+.cardBG{
+  background-color: #233744;
+}
+/* .blogBackground{
+  height: 100%;
+  background-image: url(./components/images/BlogBG.png);
+  background-size: auto; */
+/* } */
+
+.sticky-bottom{
+  background-color: #233744;
+}
+body,html{
+
+  background-image: url(./components/images/BlogBG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%; 
 }

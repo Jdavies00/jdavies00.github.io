@@ -1,12 +1,22 @@
 import React from 'react';
-import { Jumbotron, Button } from 'reactstrap';
+import { Jumbotron, Button, Row, Col, Container } from 'reactstrap';
+import bannerSmall from "../components/images/bannerLarge.png";
+
 
 const homePage = (props) => {
+
+
+
   return (
-    
-    <div className = "jumbotron-fluid">
-    <hr />
+    <div style={{backgroundColor: "#233744"}} >
+    {/* <br /> */}
+      <Container fluid style={{backgroundColor: "#233744"}}>
+      
+        <img src={bannerSmall}  alt="banner" />
+       
+      </Container>
       <Jumbotron>
+
         <h1 className="display-3">Hello, world!</h1>
         <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
         <hr className="my-2" />

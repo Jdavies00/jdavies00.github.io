@@ -13,10 +13,9 @@ function ResumePdf() {
 
   return (
     <>
-      {/* <Container  > */}
+      <Container fluid >
         {/* <Col> */}
-        <hr />
-          <Row className="resumeContainer">
+          {/* <Row className="resumeContainer"> */}
 
             <Document className="resume"
               file="Resume/jDavies.pdf"
@@ -25,9 +24,9 @@ function ResumePdf() {
               <Page pageNumber={pageNumber} />
             </Document>
             {/* <p>Page {pageNumber} of {numPages}</p> */}
-          </Row>
-        {/* </Col> */}
-      {/* </Container> */}
+          {/* </Row>
+        </Col> */}
+      </Container>
     </>
   );
 }

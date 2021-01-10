@@ -18,16 +18,16 @@ function App() {
     <>
       <Router>
         <AppProvider>
-          <Navbar className="sticky-top" style={{ backgroundColor: '#E9ECEF' }} >
+          <Navbar className="sticky-top" style={{ backgroundColor: '#233744' }} >
             <Container>
-              <Button color="primary"><NavLink style={{ color: 'white' }} to="/"> Home </NavLink></Button>
-              <Button color="primary"><NavLink style={{ color: 'white' }} to="/Resume"> Resume </NavLink></Button>
-              <Button color="primary"><NavLink style={{ color: 'white' }} to="/Blog">  Blog </NavLink></Button>
+              <NavLink style={{ color: 'white'}} to="/"><Button  style={{backgroundColor:"#51AEB5", color:"#DEE7E9"}}> Home</Button> </NavLink>
+              <NavLink style={{ color: 'white' }} to="/Resume"><Button style={{backgroundColor:"#51AEB5", color:"#DEE7E9"}}> Resume</Button> </NavLink>
+              <NavLink style={{ color: 'white' }} to="/Blog"><Button style={{backgroundColor:"#51AEB5", color:"#DEE7E9"}}>Blog</Button> </NavLink>
 
               <ButtonDropdown  isOpen={dropdownOpen} toggle={toggle}>
-                <DropdownToggle color="primary"  caret>
+                <DropdownToggle  style={{backgroundColor:"#51AEB5", color:"#DEE7E9"}}  caret>
                   Contact Me!
-      </DropdownToggle>
+                </DropdownToggle>
                 <DropdownMenu>
                   {/* <DropdownItem header><a href="#" target= "_blank" >Protfolio</a></DropdownItem> */}
                   <DropdownItem ><a href="https://github.com/Jdavies00" target= "_blank">Github</a></DropdownItem>
@@ -50,6 +50,7 @@ function App() {
           </Switch>
         </AppProvider>
       </Router>
+      <footer className="sticky-bottom"> sometext</footer>
     </>
   )
 }
