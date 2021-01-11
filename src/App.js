@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-do
 import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
 import Blog from "./components/Blog"
-import AboutMe from "./components/AboutMe"
+import Resume from "./components/Pdf"
 import HomePage from "./components/Home"
 
 
@@ -18,18 +18,17 @@ function App() {
     <>
       <Router>
         <AppProvider>
-          <Navbar className="sticky-top" style={{ backgroundColor: 'grey' }} >
-            <Container>
-              <NavLink style={{ color: 'black' }} to="/"> Home </NavLink>
-              <NavLink style={{ color: 'black' }} to="/AboutMe"> About Me </NavLink>
-              <NavLink style={{ color: 'black' }} to="/Blog">  Blog </NavLink>
+          <Navbar className="sticky-top" style={{ backgroundColor: '#233744' }} >
+            <Container fluid>
+              <NavLink style={{ color: 'white'}} to="/"><Button  style={{backgroundColor:"#51AEB5", color:"#DEE7E9"}}> Home</Button> </NavLink>
+              <NavLink style={{ color: 'white' }} to="/Resume"><Button style={{backgroundColor:"#51AEB5", color:"#DEE7E9"}}> Resume</Button> </NavLink>
+              <NavLink style={{ color: 'white' }} to="/Blog"><Button style={{backgroundColor:"#51AEB5", color:"#DEE7E9"}}>Blog</Button> </NavLink>
 
-              <ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
-                <DropdownToggle style={{ color: 'black' }} caret>
+              <ButtonDropdown  isOpen={dropdownOpen} toggle={toggle}>
+                <DropdownToggle  style={{backgroundColor:"#51AEB5", color:"#DEE7E9"}}  caret>
                   Contact Me!
-      </DropdownToggle>
-                <DropdownMenu>
-                  {/* <DropdownItem header><a href="#" target= "_blank" >Protfolio</a></DropdownItem> */}
+                </DropdownToggle>
+                <DropdownMenu style={{backgroundColor:'#51AEB5', color:'white'}}>
                   <DropdownItem ><a href="https://github.com/Jdavies00" target= "_blank">Github</a></DropdownItem>
                   <DropdownItem ><a href="https://www.linkedin.com/in/jdavies00/" target= "_blank" >Linkedin</a></DropdownItem>
                 </DropdownMenu>
@@ -41,8 +40,8 @@ function App() {
             <Route exact path="/">
               <HomePage />
             </Route>
-            <Route path="/AboutMe">
-              <AboutMe />
+            <Route path="/Resume">
+              <Resume />
             </Route>
             <Route path="/Blog">
               <Blog />
@@ -50,6 +49,7 @@ function App() {
           </Switch>
         </AppProvider>
       </Router>
+      <footer className="sticky-bottom"> sometext</footer>
     </>
   )
 }
