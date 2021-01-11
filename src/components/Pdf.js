@@ -13,20 +13,20 @@ function ResumePdf() {
 
   return (
     <>
-      <Container fluid >
-        {/* <Col> */}
-          {/* <Row className="resumeContainer"> */}
-
+    <div className="pdfbackground">
+      <Container>
+        <Col>
+          <Row>
             <Document className="resume"
               file="Resume/jDavies.pdf"
               onLoadSuccess={onDocumentLoadSuccess}
             >
               <Page pageNumber={pageNumber} />
             </Document>
-            {/* <p>Page {pageNumber} of {numPages}</p> */}
-          {/* </Row>
-        </Col> */}
+           </Row>
+         </Col>
       </Container>
+    </div>
     </>
   );
 }

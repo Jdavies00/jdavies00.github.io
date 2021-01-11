@@ -19,7 +19,7 @@ function App() {
       <Router>
         <AppProvider>
           <Navbar className="sticky-top" style={{ backgroundColor: '#233744' }} >
-            <Container>
+            <Container fluid>
               <NavLink style={{ color: 'white'}} to="/"><Button  style={{backgroundColor:"#51AEB5", color:"#DEE7E9"}}> Home</Button> </NavLink>
               <NavLink style={{ color: 'white' }} to="/Resume"><Button style={{backgroundColor:"#51AEB5", color:"#DEE7E9"}}> Resume</Button> </NavLink>
               <NavLink style={{ color: 'white' }} to="/Blog"><Button style={{backgroundColor:"#51AEB5", color:"#DEE7E9"}}>Blog</Button> </NavLink>
@@ -28,8 +28,7 @@ function App() {
                 <DropdownToggle  style={{backgroundColor:"#51AEB5", color:"#DEE7E9"}}  caret>
                   Contact Me!
                 </DropdownToggle>
-                <DropdownMenu>
-                  {/* <DropdownItem header><a href="#" target= "_blank" >Protfolio</a></DropdownItem> */}
+                <DropdownMenu style={{backgroundColor:'#51AEB5', color:'white'}}>
                   <DropdownItem ><a href="https://github.com/Jdavies00" target= "_blank">Github</a></DropdownItem>
                   <DropdownItem ><a href="https://www.linkedin.com/in/jdavies00/" target= "_blank" >Linkedin</a></DropdownItem>
                 </DropdownMenu>
