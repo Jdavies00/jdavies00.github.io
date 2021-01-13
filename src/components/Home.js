@@ -18,8 +18,8 @@ const homePage = (props) => {
 
               <h1 className="display-3">Hello, world!</h1>
               {/* maybe add self picture here */}
+                {/* <Image src={require("/images/headShot.png")}  /> */}
               <Col xs={6} md={4}>
-                <Image src="holder.js/171x180" roundedCircle />
               </Col>
               <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
               <hr className="my-2" />
