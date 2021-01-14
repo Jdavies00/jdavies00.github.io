@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Navbar, Button, Jumbotron, Container } from 'reactstrap';
+import React, { useState } from 'react';
+import { Navbar, Button, Container } from 'reactstrap';
 import { AppProvider } from './Untilities/AppContext';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom"
@@ -49,7 +49,7 @@ function App() {
           </Switch>
         </AppProvider>
       </Router>
-      <footer className="sticky-bottom"> sometext</footer>
+      <footer className= "sticky-bottom"> sometext</footer>
     </>
   )
 }
