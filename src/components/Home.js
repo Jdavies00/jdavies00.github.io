@@ -22,9 +22,11 @@ const homePage = (props) => {
         </Jumbotron>
         <br />
         <Jumbotron className="ml-4 mr-5" style={{ justifyContent: "center", width: "auto" }}>
-          <p className="lead">In this bloog I have recored my time throught my boot camp tio learn code, cand will continue to keep track opf my code learned progesss, in addition the keeping track of it through wrtiing I will update the look o fthis blog over time </p>
+          <p className="lead">
+          In this bloog I have recored my time throught my boot camp to learn code, and will continue to keep track of my code learned progesss. 
+          In addition the keeping track of it through wrtiing I will update the look o fthis blog over time </p>
           <hr className="my-2" />
-          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+          {/* <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> */}
           <p className="lead"></p>
         </Jumbotron>
         <br />
