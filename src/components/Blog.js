@@ -4,7 +4,7 @@ import { Card, CardTitle, CardText, CardBody, CardSubtitle, Button, CardImg, Con
 const Blog = (props) => {
     return (
         <>
-            <div style={{ backgroundColor: "#1B3342"}}>
+            <div className="pdfbackground">
                 <Container>
                     <Row>
                         <Col>
@@ -12,6 +12,14 @@ const Blog = (props) => {
                             <Card className="cardStyle">
                                 <CardBody>
                                     <CardTitle tag="h5">1/11/2021</CardTitle>
+                                    <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle>
+                                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                                </CardBody>
+                            </Card>
+                            <br />
+                            <Card>
+                                <CardBody>
+                                    <CardTitle tag="h5">Card title</CardTitle>
                                     <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle>
                                     <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
                                 </CardBody>

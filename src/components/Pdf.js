@@ -12,7 +12,7 @@ function ResumePdf() {
   }
 
   return (
-    <>
+    
     <div className="pdfbackground">
       <Container>
         <Col>
@@ -27,7 +27,7 @@ function ResumePdf() {
          </Col>
       </Container>
     </div>
-    </>
+    
   );
 }
 export default ResumePdf
