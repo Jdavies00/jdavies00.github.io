@@ -22,7 +22,7 @@ const homePage = (props) => {
         </Jumbotron>
         <br />
         <Jumbotron className="ml-4 mr-5" style={{ justifyContent: "center", width: "auto" }}>
-          <p className="lead">
+          <p className="lead ">
           In this bloog I have recored my time throught my boot camp to learn code, and will continue to keep track of my code learned progesss. 
           In addition the keeping track of it through wrtiing I will update the look o fthis blog over time </p>
           <hr className="my-2" />
