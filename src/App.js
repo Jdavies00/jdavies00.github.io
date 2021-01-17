@@ -29,8 +29,10 @@ function App() {
                   Contact Me!
                 </DropdownToggle>
                 <DropdownMenu style={{backgroundColor:'#51AEB5', color:'white'}}>
-                  <DropdownItem ><a href="https://github.com/Jdavies00" target= "_blank">Github</a></DropdownItem>
-                  <DropdownItem ><a href="https://www.linkedin.com/in/jdavies00/" target= "_blank" >Linkedin</a></DropdownItem>
+                  <DropdownItem ><a href="https://github.com/Jdavies00" target= "_blank" rel="noopener noreferrer">Github</a></DropdownItem>
+                  <DropdownItem ><a href="https://www.linkedin.com/in/jdavies00/" target= "_blank" rel="noopener noreferrer" >Linkedin</a></DropdownItem>
+                  <DropdownItem ><a href="https://jdaviesportfolio.web.app/" target= "_blank" rel="noopener noreferrer" >Portfolio</a></DropdownItem>
+
                 </DropdownMenu>
               </ButtonDropdown>
 
