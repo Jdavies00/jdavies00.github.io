@@ -18,7 +18,7 @@ function ResumePdf() {
         <Col>
           <Row>
             <Document className="resume"
-              file="Resume/jDavies.pdf"
+              file="Resume/ResumeForSite.pdf"
               onLoadSuccess={onDocumentLoadSuccess}
             >
               <Page pageNumber={pageNumber} />
